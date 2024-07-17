@@ -1,4 +1,6 @@
+
 import React, { useState } from 'react';
+import flightService from '../services/flightService';
 
 const FlightSearch = ({ onSearch }) => {
   const [formData, setFormData] = useState({
@@ -15,9 +17,15 @@ const FlightSearch = ({ onSearch }) => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    onSearch(formData);
+    try {
+      const flights = await flightService.searchFlights(formData);
+      console.log(flights); // Handle flight results
+      if (onSearch) onSearch(flights);
+    } catch (error) {
+      console.error('Error searching flights:', error);
+    }
   };
 
   return (
