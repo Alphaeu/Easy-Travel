@@ -3,10 +3,10 @@
 # Login to Heroku (only if not already authenticated)
 heroku login
 
-# Create a new Heroku app (replace 'your-app-name' with your preferred app name)
-heroku create your-app-name
+# Create a new Heroku app with a unique name (replace 'your-unique-app-name' with your preferred app name)
+herokuc
 
-# Set Heroku environment variables
+# Set Heroku environment variables if needed
 heroku config:set NODE_ENV=production
 # Add more environment variables as needed:
 # heroku config:set JWT_SECRET=your_jwt_secret
