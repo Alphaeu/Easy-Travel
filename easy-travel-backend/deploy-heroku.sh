@@ -4,7 +4,7 @@
 heroku login
 
 # Create a new Heroku app with a unique name (replace 'your-unique-app-name' with your preferred app name)
-herokuc
+heroku create easy-travel-backend_v1
 
 # Set Heroku environment variables if needed
 heroku config:set NODE_ENV=production
