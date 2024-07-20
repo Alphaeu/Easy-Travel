@@ -17,9 +17,9 @@
     "express": "^4.17.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.12",
-    "paypal-rest-sdk": "^1.10.0",
+    "paypal-rest-sdk": "^1.8.1",
     "redis": "^4.0.0",
-    "stripe": "^8.235.0",
+    "stripe": "^15.8.0",
     "mpesa-api": "^1.0.0",
     "nodemon": "^2.0.15"
   },
