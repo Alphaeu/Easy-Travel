@@ -1,5 +1,5 @@
 {
-  "name": "easy-travel-backend",
+  "name": "easy-travel-backend_v1",
   "version": "1.0.0",
   "description": "Backend for Easy Travel web application",
   "main": "server.js",
@@ -20,9 +20,10 @@
     "paypal-rest-sdk": "^1.10.0",
     "redis": "^4.0.0",
     "stripe": "^8.235.0",
-    "nodemon": "^2.0.15" 
+    "mpesa-api": "^1.0.0",
+    "nodemon": "^2.0.15"
   },
   "devDependencies": {
-    
+    "concurrently": "^6.2.1"
   }
 }

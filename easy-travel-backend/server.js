@@ -1,9 +1,13 @@
 const express = require('express');
+const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const errorHandler = require('./middleware/errorHandler');
 const authRoutes = require('./routes/authRoutes');
 const flightRoutes = require('./routes/flightRoutes');
 const userRoutes = require('./routes/userRoutes');
+const paymentRoutes = require('./routes/paymentRoutes');
+
+dotenv.config();
 
 const app = express();
 
@@ -15,6 +19,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/flights', flightRoutes);
 app.use('/api/users', userRoutes);
+app,use('/api/payments', paymentRoutes);
 
 // Error Handling Middleware
 app.use(errorHandler);

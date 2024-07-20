@@ -3,7 +3,7 @@
 # Login to Heroku (only if not already authenticated)
 heroku login
 
-# Create a new Heroku app with a unique name (replace 'your-unique-app-name' with your preferred app name)
+# Creates a new Heroku app with a unique name
 heroku create easy-travel-backend_v1
 
 # Set Heroku environment variables if needed
@@ -17,7 +17,7 @@ heroku config:set NODE_ENV=production
 git push heroku main
 
 # Optionally, run migrations or other setup commands
-# heroku run npm run migrate
+heroku run npm run migrate
 
 # Open the deployed app in the browser
 heroku open
