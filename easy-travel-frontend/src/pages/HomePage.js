@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import FlightSearch from '../components/FlightSearch';
 
 const HomePage = () => {
@@ -9,10 +10,13 @@ const HomePage = () => {
 
   return (
     <div>
-      <h2>Welcome to Ascent Travel</h2>
+      <h2>Welcome to Easy Travel</h2>
+      <p>Your gateway to a seamless and enjoyable travel experience.</p>
       <FlightSearch onSearch={handleSearch} />
+      <Link to="/flights">Search Flights</Link>
     </div>
   );
 };
 
 export default HomePage;
+
